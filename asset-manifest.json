@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/poc-react-nested-routing/static/css/main.d87fdcc2.chunk.css",
+    "main.js": "/poc-react-nested-routing/static/js/main.b017a8e7.chunk.js",
+    "main.js.map": "/poc-react-nested-routing/static/js/main.b017a8e7.chunk.js.map",
+    "runtime-main.js": "/poc-react-nested-routing/static/js/runtime-main.b1f7abcc.js",
+    "runtime-main.js.map": "/poc-react-nested-routing/static/js/runtime-main.b1f7abcc.js.map",
+    "static/js/2.d13c3021.chunk.js": "/poc-react-nested-routing/static/js/2.d13c3021.chunk.js",
+    "static/js/2.d13c3021.chunk.js.map": "/poc-react-nested-routing/static/js/2.d13c3021.chunk.js.map",
+    "index.html": "/poc-react-nested-routing/index.html",
+    "static/css/main.d87fdcc2.chunk.css.map": "/poc-react-nested-routing/static/css/main.d87fdcc2.chunk.css.map",
+    "static/js/2.d13c3021.chunk.js.LICENSE.txt": "/poc-react-nested-routing/static/js/2.d13c3021.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1f7abcc.js",
+    "static/js/2.d13c3021.chunk.js",
+    "static/css/main.d87fdcc2.chunk.css",
+    "static/js/main.b017a8e7.chunk.js"
+  ]
+}
