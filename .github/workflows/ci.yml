@@ -1,20 +1,35 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  format-lint-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 
+        uses: actions/checkout@v2
+      - name: Set-up Node 
+        uses: actions/setup-node@v1
+          with:
+            node-version: "16.13.x"
+      - name: Install packages
+        run: yarn install      
       - name: Prettier format
         run: |
-          yarn install     
           yarn format
       - name: Eslint Lint
         run: yarn lint
       - name: Deploy Github Pages
-        run: |
-          yarn predeploy
-          yarn deploy
+        run: 
+            crazy-max/ghaction-github-pages@v1
+          with:
+            target_branch: gh-pages
+            build_dir: build
+          env: 
+            GITHUB_TOKEN:
+              ${{ secrets.GITHUBCI }}
+          
