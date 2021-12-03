@@ -9,11 +9,13 @@ import { Navbar } from 'components'
 import { Profile, Welcome } from 'pages'
 
 // New approach
-// TODO: Correct ghpages routing behavior
 const routes = [
-  { path: '/', element: <Navigate replace to="/home/welcome" /> },
   {
-    path: '/home',
+    path: '/poc-react-nested-routing',
+    element: <Navigate replace to="/poc-react-nested-routing/home/welcome" />,
+  },
+  {
+    path: '/poc-react-nested-routing/home',
     element: <Navbar />,
     children: [
       { path: 'welcome', element: <Welcome /> },
