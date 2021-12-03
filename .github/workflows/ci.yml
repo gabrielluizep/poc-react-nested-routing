@@ -20,10 +20,11 @@ jobs:
           yarn format
       - name: Eslint Lint
         run: yarn lint
-      - name: Deploy Github Pages
-        run: crazy-max/ghaction-github-pages@v1
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: build
+          build_dir: public
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUBCI }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
