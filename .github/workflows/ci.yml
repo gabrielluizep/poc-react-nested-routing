@@ -1,12 +1,9 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
-  format-lint-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,4 +29,3 @@ jobs:
           env: 
             GITHUB_TOKEN:
               ${{ secrets.GITHUBCI }}
-          
