@@ -1,0 +1,18 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Prettier format
+        run: yarn format
+      - name: Eslint Lint
+        run: yarn lint
+      # - name: Deploy Github Pages
+      #   run: |
+      #     yarn predeploy
+      #     yarn deploy
