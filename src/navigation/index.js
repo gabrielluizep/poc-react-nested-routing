@@ -9,6 +9,7 @@ import { Navbar } from 'components'
 import { Profile, Welcome } from 'pages'
 
 // New approach
+// TODO: Correct ghpages routing behavior
 const routes = [
   { path: '/', element: <Navigate replace to="/home/welcome" /> },
   {

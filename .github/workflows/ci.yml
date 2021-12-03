@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
       - name: Prettier format
-        run: yarn format
+        run: |
+          yarn install     
+          yarn format
       - name: Eslint Lint
         run: yarn lint
       - name: Deploy Github Pages
