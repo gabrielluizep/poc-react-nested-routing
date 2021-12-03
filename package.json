@@ -1,4 +1,5 @@
 {
+  "homepage": "https://gabrielluizep.github.io/poc-react-nested-routing/",
   "name": "poc-react-nested-routing",
   "version": "0.1.0",
   "private": true,
@@ -42,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.3.0",
+    "eslint": "7.28",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",

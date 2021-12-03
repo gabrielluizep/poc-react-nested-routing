@@ -12,7 +12,7 @@ jobs:
         run: yarn format
       - name: Eslint Lint
         run: yarn lint
-      # - name: Deploy Github Pages
-      #   run: |
-      #     yarn predeploy
-      #     yarn deploy
+      - name: Deploy Github Pages
+        run: |
+          yarn predeploy
+          yarn deploy
